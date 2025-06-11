@@ -6,7 +6,7 @@ Ball::Ball(int type)
     if(type == 0)
     {
         this->type = 0;
-        ball.setPosition({WIDTH / 2 * TILESIZE, HEIGHT / 2 * TILESIZE});
+        ball.setPosition({WIDTH / 2 * TILESIZE - 102, HEIGHT / 2 * TILESIZE});
         ball.setFillColor(sf::Color::Black);
         ball.setOutlineColor(sf::Color::White);
     }
