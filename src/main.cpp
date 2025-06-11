@@ -4,7 +4,11 @@
 int main(){
 
     sf::RenderWindow window;
+    sf::Image icon(windowIconPath);
+
     window.create(sf::VideoMode({TILESIZE * WIDTH, TILESIZE * HEIGHT}), "YinYang", sf::Style::Default);
+
+    window.setIcon(icon);
 
     sf::View view(sf::FloatRect(sf::Vector2f(0, 0), sf::Vector2f(TILESIZE * WIDTH, TILESIZE * HEIGHT)));
     

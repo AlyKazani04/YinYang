@@ -10,6 +10,8 @@ class Game
         Ball yin;
         Ball yang;
 
+        sf::Clock clock;
+
         sf::Color tileColors[HEIGHT][WIDTH];
 
         void updateBallTileInteraction(Ball& ball);

@@ -88,8 +88,11 @@ void Game::updateBallTileInteraction(Ball& ball)
 
 void Game::update(float deltaTime)
 {
-    yin.update(deltaTime);
-    yang.update(deltaTime);
+    if(clock.getElapsedTime().asSeconds() > 1.f)
+    {
+        yin.update(deltaTime);
+        yang.update(deltaTime);
+    }
 
     updateBallTileInteraction(yin);
     updateBallTileInteraction(yang);

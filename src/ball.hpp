@@ -1,6 +1,7 @@
 #pragma once
 
 #include <SFML/Graphics.hpp>
+#include <random>
 #include "constants.hpp"
 
 class Ball{
@@ -8,6 +9,7 @@ class Ball{
         sf::CircleShape ball;
         const float SPEED = 180;
         sf::Vector2f velocity = {SPEED, SPEED};
+
         int type; // 0 = yin, 1 = yang
 
     public:
